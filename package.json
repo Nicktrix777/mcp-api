@@ -1,0 +1,24 @@
+{
+    "name": "mcp-api",
+    "version": "1.0.0",
+    "description": "MCP-style API using Next.js, Gemini, and PostgreSQL",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "prisma:generate": "prisma generate",
+        "prisma:migrate": "prisma migrate dev",
+        "bootstrap": "sh ./network/bootstrap.sh"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.24.1",
+        "@prisma/client": "^5.22.0",
+        "next": "^13.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "prisma": "^5.14.0"
+    }
+}
