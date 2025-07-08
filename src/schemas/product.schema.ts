@@ -1,4 +1,3 @@
-
 export const productSchema = {
     name: { type: 'string', required: true },
     price: { type: 'number', required: true },
@@ -9,4 +8,12 @@ export const productSchema = {
     tags: { type: 'array', required: false, default: [] },
     isAvailable: { type: 'boolean', required: false, default: true },
   };
+
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  stock?: number;
+  description?: string;
+};
   
